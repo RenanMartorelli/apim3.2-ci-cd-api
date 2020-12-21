@@ -1,0 +1,14 @@
+environments:
+  - name: dev
+    endpoints:
+      production: http://host.docker.internal:8595/api
+      sandbox: http://host.docker.internal:8595/api
+  - name: production
+    endpoints:
+      production: http://host.docker.internal:8595/api
+      sandbox: http://host.docker.internal:8595/api
+
+deploy:
+  import:
+    update: true
+    preserveProvider: true
