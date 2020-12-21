@@ -1,7 +1,7 @@
 environments:
   - name: dev
     endpoints:
-      production: http://host.docker.internal:8595/api
+      production: http://host.docker.internal:8595/apis
       sandbox: http://host.docker.internal:8595/api
   - name: production
     endpoints:
