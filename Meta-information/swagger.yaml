@@ -333,13 +333,13 @@ x-wso2-cors:
    - OPTIONS
 x-wso2-production-endpoints:
   urls:
-   - host.docker.internal:8595
+   - http://host.docker.internal:8595/api
   type: http
 x-wso2-sandbox-endpoints:
   urls:
-   - host.docker.internal:8595
+   - http://host.docker.internal:8595/api
   type: http
-x-wso2-basePath: /user/2.0
+x-wso2-basePath: /users/2.0
 x-wso2-transports:
  - http
  - https

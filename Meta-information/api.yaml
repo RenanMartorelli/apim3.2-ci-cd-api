@@ -3,13 +3,13 @@ id:
   apiName: UserAPI
   version: "2.0"
   id: 0
-uuid: 140b8c18-65a1-499c-b072-45e929f705af
+uuid: a8bedc30-27f4-44f8-8c39-d07532835dc3
 type: HTTP
-context: /user/2.0
-contextTemplate: /user/{version}
+context: /users/2.0
+contextTemplate: /users/{version}
 tags: []
 documents: []
-lastUpdated: Dec 21, 2020, 11:15:01 AM
+lastUpdated: May 25, 2021, 4:14:50 PM
 availableTiers:
  -
   name: Unlimited
@@ -52,7 +52,7 @@ corsConfiguration:
    - DELETE
    - PATCH
    - OPTIONS
-endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"host.docker.internal:8595"},"production_endpoints":{"url":"host.docker.internal:8595"}}'
+endpointConfig: '{"endpoint_type":"http","sandbox_endpoints":{"url":"http:\/\/host.docker.internal:8595\/api"},"production_endpoints":{"url":"http:\/\/host.docker.internal:8595\/api"}}'
 responseCache: Disabled
 cacheTimeout: 300
 implementation: ENDPOINT
@@ -64,7 +64,7 @@ keyManagers:
  - all
 environments:
  - Production and Sandbox
-createdTime: "1608548384000"
+createdTime: "1621959246000"
 additionalProperties: {}
 monetizationProperties: {}
 isMonetizationEnabled: false
